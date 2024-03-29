@@ -11,7 +11,7 @@ pipeline {
       steps {
         script {
           def app
-          app = docker.build("teaminova/kiii_jenkins")
+          app = docker.build("rotegiraffe14/kiii_jenkins")
         }
 
       }
