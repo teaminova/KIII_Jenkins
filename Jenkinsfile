@@ -4,7 +4,7 @@ node {
     checkout scm
   }
   stage('Build image') {
-    app = docker.build("teaminova/KIII_Jenkins")
+    app = docker.build("teaminova/kiii_jenkins")
   }
   stage('Push image') {
     docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
